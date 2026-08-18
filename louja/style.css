@@ -1,0 +1,83 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--cor01);
+    color: var(--cor02);
+    font-family: Arial, Helvetica, sans-serif;
+}
+*:root{
+    --cor02: #080808;
+    --cor01: #b1afaf;
+    --cor03: #ff3300;
+}
+header, nav, h1{
+    padding: 10px;
+    background-color: var(--cor03);
+}
+.foto{
+    height: 40vh;
+    width: 30vw;
+    border: 2px solid var(--cor02);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#i01{
+    background-image: url(arquivos/Casal\ na\ Cozinha\ Blog.jpg);
+}
+#i02{
+    background-image: url(arquivos/);
+}
+#i03{
+    background-image: url(arquivos/399905641891453202.jpg);
+}
+#i04{
+    background-image: url(arquivos/coca\ cola.jpg);
+}
+#i05{
+    background-image: url(arquivos/Looks\ yummy!.jpg);
+}
+#i06{
+    background-image: url(arquivos/Helado\ de\ Fresa\ casero!\ 🍓🍦.jpg);
+}
+article{
+    text-align: center;
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.text{
+    width: 140px;
+    margin: 10px;
+    font-size: 1.3em;
+}
+.campoBig{
+    flex-flow: column wrap;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+}
+footer, footer > p{
+    background-color: #969696;
+    text-align: center;
+    padding: 16px;
+    color: #6b6b6b;
+}
+@media screen and (min-width: 577px) {
+    article{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .foto{
+        height: 50vh;
+        width: 25vw;
+    }
+}
+@media screen and (min-width: 992px) {
+    .foto{
+        height: 60vh;
+        width: 30vw;
+    }
+}
