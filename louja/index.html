@@ -1,62 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lanches</title>
+    <title>Torra Alta</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <div id="logo"></div>
-            <h1>Lanches Delicia</h1>
+            <p>Torra Alta</p>
+            <button onclick="descer()">Carrinho</button>
         </nav>
     </header>
     <main>
-         <article>
-            <div class="campoBig">
-                <div class="foto" id="i01">
+        <div id="intro">
+            <h1>Cada grão carrega a <h1 id="alt">altitude</h1> <h1> de onde nasceu</h1>
+            <p id="intro2">Compramos direto de oito famílias <br>produtoras acima de 1.100m. Torramos em <br>lotes de até 12kg, registrando a curva de <br> cada safra para preservar o que o <br> terroir já fez de melhor.</p>
+             
+        </div>
+        <article id="prin">
+            <div id="i1">
+                <div>
+                    <h2>Sertão Torra Clara</h2>
+                    <p>Fazenda Sertão, 1250m-Bourbon Amarelo</p>
+                    <p>mel, maçã e caramelo</p>
                 </div>
-                <div class="text">
-                    <p>uma batata frita crocante e na medida certa de sal</p>
-                </div>
-            </div>
-            <div  class="campoBig">
-                <div class="foto" id="i02">
-                </div>
-                <div class="text"> <p>hamburger com carne, alface, tomate e queijo, super cremoso e gostoso</p>
-                </div>
-            </div>
-            <div class="campoBig">
-                <div class="foto" id="i03">
-                </div>
-                <div class="text"> <p>suco bem geladinho e doce</p>
+                <div class="pag">
+                    <p>R$ 54 / 250g</p>
+                    <button onclick="adicionar1()" id="but">adicionar ao carrinho</button>
                 </div>
             </div>
-            <div class="campoBig">
-                <div class="foto" id="i04">
+            <div id="i2">
+                <div>
+                    <h2>Boa Vista Torra Média</h2>
+                    <p>Sítio Boa Vista, 1.100m-Catuaí Vermelho</p>
+                    <p>chocolate, castanha e laranja</p>
                 </div>
-                <div class="text"> <p>refri bem gelado e com gelo</p>
-                </div>
-            </div>
-            <div class="campoBig">
-                <div class="foto" id="i05">
-                </div>
-                <div class="text"><p>milkshake bem gelado e saboroso</p>
-                </div>
-            </div>
-            <div class="campoBig">
-                <div class="foto" id="i06">
-                </div>
-                <div class="text"><p>um sorvete gelado e otima opção para uma sobremesa</p>
+                <div class="pag">
+                    <p>R$48 / 250g</p>
+                    <button onclick="adicionar2()" id="but">adicionar ao carrinho</button>
                 </div>
             </div>
-         </article>
+            <div id="i3">
+                <div>
+                    <h2>Água Limpa Torra Clara</h2>
+                    <p>Fazenda Água Limpa, 1400m-Mundo Novo</p>
+                    <p>uva passa, especiarias e jasmim</p>
+                </div>
+                <div class="pag">
+                    <p>R$ 62 / 250g</p> <button onclick="adicionar3()" id="but">adicionar ao carrinho</button>
+                </div>    
+            </div>
+            <p id="not"></p>
+        </article>
+        <article id="desfech">
+            <h2>"A gente sempre soube que a altitude fazia diferença. O que a Torra Alta trouxe foi mostrar isso pra quem bebe — com dado, não só com conversa."</h2>
+        </article>
+        
+        <aside>
+            <h1>Receba a torra da semana antes de qualquer loja.</h1>
+            <abbr title="Não está funcionando ainda :(">Montar minha assinatura</abbr>
+        </aside>
+        <div id="campCar">
+            <ul id="carrinho">
+                <h1>Seu carrinho será exibido aqui:</h1>
+            </ul>
+        </div>
     </main>
     <footer>
-        <p>este site é apenas um teste!!</p> <br>
-        <p>desenvolvido por Pyetro Emanoell Soares Paulo</p>
+        <p> Torra Alta - Torrefação, Extrema</p>
+        <p>Origem, A Torra, Cafés e Assinaturas</p>
     </footer>
+<script src="script.js"></script>
 </body>
 </html>
