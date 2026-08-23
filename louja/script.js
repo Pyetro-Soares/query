@@ -52,8 +52,19 @@ function adicionar3(){
 }
 function descer(){
     window.scrollTo({
-        top:900,
+        top:1100,
         behavior: 'smooth'
     }
     )
 }
+const myObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting===true){
+            entry.target.classList.add('show')
+        }else{
+            entry.target.classList.remove('show')
+        }
+    })
+})
+const elements = document.querySelectorAll('.hidden')
+elements.forEach((element) => myObserver.observe(element))

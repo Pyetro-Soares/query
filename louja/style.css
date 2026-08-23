@@ -8,6 +8,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
+    z-index: 100;
     position: sticky;
     top: 0;
 }
@@ -46,11 +47,13 @@ nav > p,button{
 #intro{
     background-color: #640000;
     padding: 30px;
+    height: 100vh;
 }
 #alt{
     text-decoration: underline;
     text-decoration-style: wavy;
     font-family: Josefin Sans;
+    color: #d13b00;
 }
 #intro2{
     margin: 5px;
@@ -197,6 +200,16 @@ footer{
     color: #5e1b00;
     padding: 45px;
     background-color: #a52f00;
+}
+.hidden{
+    filter: blur(10px);
+    transition: all 1s;
+    opacity: 0;
+}
+.show{
+    filter: blur(0px);
+    opacity: 1;
+    transform: translateX(0);
 }
 @media screen and (min-width:640px) {
     nav>p{
