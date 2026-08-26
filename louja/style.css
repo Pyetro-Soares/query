@@ -201,6 +201,15 @@ footer{
     padding: 45px;
     background-color: #a52f00;
 }
+#notinsuport{
+    padding: 0px;
+    height: 0px;
+    width: 0px;
+}
+#not{
+    padding: 0px;
+    width: 0px;
+}
 .hidden{
     filter: blur(10px);
     transition: all 1s;
@@ -216,12 +225,13 @@ footer{
         margin-left: 5vw;
     }
     #prin{
-        display: flex;
-        flex-flow: row nowrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 120px;
+        grid-auto-flow: row 1fr;
     }
     #i1, #i2, #i3{
         margin: 10px;
-        flex: auto;
-        width: 30vw;
+        width: 25vw;
     }
 }

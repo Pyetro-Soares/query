@@ -5,14 +5,20 @@ function adicionar1(){
     campo.appendChild(produto)
     let noti= document.getElementById("not")
     noti.textContent="adicionado ao carrinho"
-    noti.style.position="fixed"
-    noti.style.padding="30px"
-    noti.style.width="99vw"
+    noti.style.position="sticky"
+    noti.style.padding="20px"
+    noti.style.width="200px"
+    noti.style.height="70px"
+    noti.style.borderRadius="10px"
+    noti.style.margin="auto"
+    noti.style.display="block"
+    noti.style.top="0"
+    noti.style.textAlign="center"
     setTimeout(() =>{
         noti.textContent=""
         noti.style.padding="0px";
         noti.style.width="0px";
-    }, 3000)
+    }, 1000)
 }
 function adicionar2(){
     let campo = document.getElementById("campCar")
@@ -21,16 +27,20 @@ function adicionar2(){
     campo.appendChild(produto)
     let noti= document.getElementById("not")
     noti.textContent="adicionado ao carrinho"
-    noti= document.getElementById("not")
-    noti.textContent="adicionado ao carrinho"
-    noti.style.position="fixed"
-    noti.style.padding="30px"
-    noti.style.width="99vw"
+    noti.style.position="sticky"
+    noti.style.padding="20px"
+    noti.style.width="200px"
+    noti.style.height="70px"
+    noti.style.borderRadius="10px"
+    noti.style.margin="auto"
+    noti.style.display="block"
+    noti.style.top="0"
+    noti.style.textAlign="center"
     setTimeout(() =>{
         noti.textContent=""
         noti.style.padding="0px";
         noti.style.width="0px";
-    }, 3000)
+    }, 1000)
 }
 function adicionar3(){
     let campo = document.getElementById("campCar")
@@ -39,16 +49,20 @@ function adicionar3(){
     campo.appendChild(produto)
     let noti= document.getElementById("not")
     noti.textContent="adicionado ao carrinho"
-    noti= document.getElementById("not")
-    noti.textContent="adicionado ao carrinho"
-    noti.style.position="fixed"
-    noti.style.padding="30px"
-    noti.style.width="99vw"
+    noti.style.position="sticky"
+    noti.style.padding="20px"
+    noti.style.width="200px"
+    noti.style.height="70px"
+    noti.style.borderRadius="10px"
+    noti.style.margin="auto"
+    noti.style.display="block"
+    noti.style.top="0"
+    noti.style.textAlign="center"
     setTimeout(() =>{
         noti.textContent=""
         noti.style.padding="0px";
         noti.style.width="0px";
-    }, 3000)
+    }, 1000)
 }
 function descer(){
     window.scrollTo({
