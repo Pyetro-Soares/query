@@ -5,15 +5,17 @@ function adicionar1(){
     campo.appendChild(produto)
     let noti= document.getElementById("not")
     noti.textContent="adicionado ao carrinho"
-    noti.style.position="sticky"
-    noti.style.padding="20px"
-    noti.style.width="200px"
-    noti.style.height="70px"
+    noti.style.position="fixed"
+    noti.style.paddingTop="20px"
+    noti.style.paddingBottom="20px"
+    noti.style.width="80vw"
+    noti.style.height="40px"
     noti.style.borderRadius="10px"
     noti.style.margin="auto"
     noti.style.display="block"
-    noti.style.top="0"
+    noti.style.bottom="0"
     noti.style.textAlign="center"
+    noti.style.marginBottom="2px"
     setTimeout(() =>{
         noti.textContent=""
         noti.style.padding="0px";
@@ -27,14 +29,15 @@ function adicionar2(){
     campo.appendChild(produto)
     let noti= document.getElementById("not")
     noti.textContent="adicionado ao carrinho"
-    noti.style.position="sticky"
-    noti.style.padding="20px"
-    noti.style.width="200px"
-    noti.style.height="70px"
+    noti.style.position="fixed"
+    noti.style.paddingTop="20px"
+    noti.style.paddingBottom="20px"
+    noti.style.width="80vw"
+    noti.style.height="40px"
     noti.style.borderRadius="10px"
     noti.style.margin="auto"
     noti.style.display="block"
-    noti.style.top="0"
+    noti.style.bottom="0"
     noti.style.textAlign="center"
     setTimeout(() =>{
         noti.textContent=""
@@ -49,14 +52,15 @@ function adicionar3(){
     campo.appendChild(produto)
     let noti= document.getElementById("not")
     noti.textContent="adicionado ao carrinho"
-    noti.style.position="sticky"
-    noti.style.padding="20px"
-    noti.style.width="200px"
-    noti.style.height="70px"
+    noti.style.position="fixed"
+    noti.style.paddingTop="20px"
+    noti.style.paddingBottom="20px"
+    noti.style.width="80vw"
+    noti.style.height="40px"
     noti.style.borderRadius="10px"
     noti.style.margin="auto"
     noti.style.display="block"
-    noti.style.top="0"
+    noti.style.bottom="0"
     noti.style.textAlign="center"
     setTimeout(() =>{
         noti.textContent=""
