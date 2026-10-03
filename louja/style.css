@@ -4,7 +4,7 @@
     background-color: var(--corDoFundoDoCafe);
     padding: 0px;
     margin: 0px;
-    font-family: sans-serif;
+    font-family: serif;
     box-sizing: border-box;
 }
 :root{
@@ -17,9 +17,25 @@
     --corDoFundoDoCafe: #CFB093;
 }
 nav{
+    background-color: var(--cor6);
     position: sticky;
     top: 0;
-    font-family: 'Montserrat';
+    text-align: center;
+    padding: 5px;
+}
+nav>a{
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 4px;
+    padding-left: 4px;
+    border-left: 1px solid var(--cor4);
+    border-right: 1px solid var(--cor4);
+    font-family: 'Work Sans';
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.6em;
+    background-color: transparent;
+    color: var(--cor1);
 }
 header{
     background-size: cover;
