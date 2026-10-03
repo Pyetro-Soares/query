@@ -1,262 +1,105 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
-    background-color: #4e0000;
+    background-color: var(--corDoFundoDoCafe);
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
-header{
-    z-index: 100;
-    position: sticky;
-    top: 0;
+:root{
+    --cor1: #382417;
+    --cor2: #6D3C1C;
+    --cor3: #C57938;
+    --cor4: #E7C196;
+    --cor5: #F8A91F;
+    --cor6: #EC6426;
+    --corDoFundoDoCafe: #CFB093;
 }
 nav{
-    background-color: #772200;
+    position: sticky;
+    top: 0;
+    font-family: 'Montserrat';
+}
+header{
+    background-size: cover;
+    background-position: center;
+    height: 68vh;
+    background-image: url(arquivos/cafe-para-header.jpg);
+    background-repeat: no-repeat;
+    font-size: 1.3em;
+}
+header>h1{
+    padding-top: 60px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    background-color: transparent;
+    color: var(--cor4);
+}
+h1>span{
+    font-size: 1.2em;
+    text-decoration: underline;
+    background-color: transparent;
+    font-family: 'Playfair Display';
+    color: var(--cor5);
+    font-style: italic;
+}
+#preview{
+    margin-top: 15px;
+}
+#preview>p{
+    padding: 10px;
+    font-family: 'Nunito';
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+#cards{
     display: flex;
     flex-flow: row wrap;
-    padding: 25px;
-    border-bottom: 3px solid #5e5e5e;
-    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--cor2);
 }
-nav > a{
-    color: black;
-    text-decoration: none;
-    flex: auto;
-    align-self: flex-end;
-    text-align: end;
-}
-nav>p{
-    font-family: DM Serif Display;
-    padding-left: 10px;
-    color: #756325;
-}
-nav > button{
-    font-family: Josefin Sans;
-    background-color: #772200;
-    border: none;
-    font-size: 1.5em;
-}
-nav > p,button{
-    background-color: #772200;
-    flex: auto;
-    margin: 5px;
-    font-size: 1.5em;
-}
-#intro{
-    background-color: #640000;
-    padding: 30px;
-    height: 100vh;
-}
-#alt{
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    font-family: Josefin Sans;
-    color: #d13b00;
-}
-#intro2{
-    margin: 5px;
-    line-height: 1.7em;
-    font-size: 1.3em;
-}
-#intro > h1{
-    background-color: #640000;
-    margin: 5px;
-    font-size: 2.9em;
-    margin-left: 10vw;
-}
-#intro > p{
-    font-family: DM Serif Display;
-    margin-left: 10vw;
-    background-color: #640000;
-}
-#prin{
-    border-top: 3px solid #5e5e5e;
-}
-#i1, #i2, #i3{
-    background-color: #a72b2b;
-    border: 1px solid #5e5e5e;
-    padding: 10px;
-    width: 90vw;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #640000;
-    border-radius: 10px;
-}
-div > h2{
-    color: #000000ad;
-    letter-spacing: 1.5px;
-}
-#i1, #i2, #i3 > h2, h2 ,h2{
-    background-color: #a72b2b;
-    line-height: 1.6em;
-    font-family: DM Serif Display;
-    border-bottom: 1px solid #5e5e5e;
-}
-div > p{
-    padding: 5px;
-    background-color: #a72b2b;
-}
-.pag{
-    color: #000000b4;
-    font-weight: bold;
-    background-color: #a72b2b;
-    border-top: 1px solid #5e5e5e;
-    margin: 5px;
-    padding-top: 5px;
-    display: flex;
-    flex-flow: column wrap;
-}
-.pag > p{
-    font-size: 1em;
-}
-#not{
-    background-color: #329e00;
-    bottom: 0px;
-    text-align: center;
-    font-size: 1.2em;
-}
-button{
-    background-color: #4e0000;
-    border: 1px solid #5e5e5e;
-    padding: 7px;
-    border-radius: 50vh;
-    justify-self: start;
-    align-self: start;
-    cursor: pointer;
-    font-size: 1em;
-}
-li{
-    color: #756325;
-    display: block;
-    margin: auto;
-    text-align: center;
-    list-style: none;
-    font-size: 1.2em;
-    padding: 10px;
-    font-family: Josefin Sans;
-}
-#desfech{
-    text-align: center;
-    background-color: #772200;
-    margin-top: 10px;
-    border-top: 1px solid #5e5e5e;
-    padding: 30px;
-}
-#desfech > h2{
-    text-align: justify;
-    background-color: #772200;
-    font-size: 1.8em;
-    letter-spacing: .06em;
-    max-width: 550px;
-    margin: auto;
-}
-p{
-    background-color: #a52f00;
-}
-aside{
-    border-bottom: 1px solid #5e5e5e;
-    background-color: #772200;
+.card{
+    background-color: var(--cor1);
+    height: 350px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-aside>abbr{
-    border: 1px solid #5e5e5e;
-    font-size: 1.9em;
-    max-width: 380px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 50vh;
-    background-color: #4e0000;
+.card>p{
+    border-bottom: 1px solid var(--cor2);
+    border-top: 1px solid var(--cor2);
+    background-color: transparent;
+    font-family: 'Nunito';
+    color: var(--corDoFundoDoCafe);
+    padding: 15px;
+    text-align: justify;
+    width: 280px;
 }
-aside>abbr:hover{
-    transition-duration: .9s;
-    background-color: #5e1b00;
-    cursor: pointer;
+.card>img{
+    margin: 15px;
+    height: 200px;
+    width: 190px;
 }
-aside > h1, aside >abbr{
-    background-color: #772200;
-    padding: 10px;
-    display: block;
+#cardGrande{
+    height: 370px;
+}
+#cardGrande > img{
+    width: 160px;
+}
+#cardGrande2{
+    height: 390px;
+}
+.faixaDeIdentificacao{
+    background-color: var(--cor3);
+    color: var(--cor1);
     text-align: center;
-    color: #000000;
-    text-decoration: none;
-    font-family: Josefin Sans;
-}
-aside > h1{
-    border-top: 1px solid #5e5e5e;
-    margin: auto;
-    max-width: 500px;
-}
-ul>h1{
-    font-family: Josefin Sans;
-    text-align: center;
-}
-footer{
-    border-top: 1px solid #5e5e5e;
-    text-align: center;
-    color: #5e1b00;
-    padding: 45px;
-    background-color: #a52f00;
-}
-#notinsuport{
-    padding: 0px;
-    height: 0px;
-    width: 0px;
-}
-#not{
-    margin-top: 30px;
-    transition-duration: 1s;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
-    background-color: #329e00;
-    text-align: center;
-    font-size: 1.3em;
-    z-index: 999;
-    padding-bottom: 2px;
-    width: 0px;
-}
-.hidden{
-    filter: blur(10px);
-    transition: all 1s;
-    opacity: 0;
-}
-.show{
-    filter: blur(0px);
-    opacity: 1;
-    transform: translateX(0);
-}
-#campNot{
-    margin-top: 40px;
-}
-@media screen and (min-width:640px) {
-    nav>p{
-        margin-left: 5vw;
-    }
-    #prin{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 2fr 120px;
-        grid-auto-flow: row 1fr;
-    }
-    #i1, #i2, #i3{
-        margin: 10px;
-        width: 25vw;
-    }
-    #not{
-    transition-duration: 1s;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
-    background-color: #329e00;
-    text-align: center;
-    font-size: 1.3em;
-    z-index: 999;
-    padding-bottom: 2px;
-    width: 0px;
-    }
+    padding: 5px;
+    font-family: 'Montserrat';
+    font-size: 2.9em;
 }

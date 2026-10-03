@@ -11,73 +11,42 @@
     <link rel="shortcut icon" href="arquivos/coffee-favicon.ico">
 </head>
 <body>
-    <header>
-        <nav>
-            <p>Torra Alta</p>
-            <button onclick="descer()">Carrinho</button>
-        </nav>
+    <nav>
+        <a href="#cards">cafés</a>
+    </nav>
+    <header><h1>Seu Café de <br> um jeito <span>especial</span></h1>
     </header>
     <main>
-        <div id="intro" class="hidden">
-            <h1>Cada grão carrega a <h1 id="alt">altitude</h1> <h1> de onde nasceu</h1>
-            <p id="intro2">Compramos direto de oito famílias <br>produtoras acima de 1.100m. Torramos em <br>lotes de até 12kg, registrando a curva de <br> cada safra para preservar o que o <br> terroir já fez de melhor.</p>
-             
-        </div>
-        <article id="prin" class="hidden">
-            <div id="i1">
-                <div>
-                    <h2>Sertão Torra Clara</h2>
-                    <p>Fazenda Sertão, 1250m-Bourbon Amarelo</p>
-                    <p>mel, maçã e caramelo</p>
-                </div>
-                <div class="pag">
-                    <p>R$ 54 / 250g</p>
-                    <button onclick="adicionar1()" id="but">adicionar ao carrinho</button>
-                </div>
+        <article id="preview">
+            <p>Na Torra Alta, o café não é apenas uma bebida é uma experiência de intensidade, aroma e cuidado. Selecionamos os melhores grãos de produtores parceiros e aplicamos um processo de torra rigoroso para extrair notas marcantes, corpo aveludado e um sabor inesquecível em cada xícara.</p>
+        </article>
+        <h1 class="faixaDeIdentificacao">Cafés</h1>
+        <article id="cards">
+            <div class="card">
+                <img src="arquivos/cafe-extra-forte.jpg" alt="Café extra forte, com torra marcante e clássica do brasileiro do dia a dia " >
+                <p>Café extra forte, com torra marcante e clássica do brasileiro do dia a dia, aqui não tem erro !</p>
             </div>
-            <div id="i2">
-                <div>
-                    <h2>Boa Vista Torra Média</h2>
-                    <p>Sítio Boa Vista, 1.100m-Catuaí Vermelho</p>
-                    <p>chocolate, castanha e laranja</p>
-                </div>
-                <div class="pag">
-                    <p>R$48 / 250g</p>
-                    <button onclick="adicionar2()" id="but">adicionar ao carrinho</button>
-                </div>
+            <div class="card">
+                <img src="arquivos/Capuccino.jpg" alt="Um Capuccino super cremoso e doce">
+                <p>Um Capuccino super cremoso e doce, e com variações, como chocolate, canela e mais !</p>
             </div>
-            <div id="i3">
-                <div>
-                    <h2>Água Limpa Torra Clara</h2>
-                    <p>Fazenda Água Limpa, 1400m-Mundo Novo</p>
-                    <p>uva passa, especiarias e jasmim</p>
-                </div>
-                <div class="pag">
-                    <p>R$ 62 / 250g</p> <button onclick="adicionar3()" id="but">adicionar ao carrinho</button>
-                </div>
+            <div class="card" id="cardGrande">
+                <img src="arquivos/Cafe-gelado.jpg" alt="Um café bem geladinho com um gosto leve mas marcante">
+                <p>Um café bem geladinho com um gosto leve mas marcante, e com outras variações, e com opções de caldas, como mel ou chocolate !</p>
             </div>
-        <article>
-            <div id="campNot">
-                <p id="not"></p>
+            <div class="card" id="cardGrande2">
+                <img src="arquivos/milkshake-de-caramelo.jpg" alt="Um milkshake bem batido, com variadas opções de cobertura e sabor">
+                <p>Um milkshake bem batido, com variadas opções de cobertura e sabor, como caramelo com cobertura de mel e um adicional de 2,50 de canela</p>
             </div>
         </article>
+        <h1 class="faixaDeIdentificacao">Doces</h1>
+        <article id="doces">
+            <div></div>
         </article>
-        <article id="desfech" class="hidden">
-            <h2>"A gente sempre soube que a altitude fazia diferença. O que a Torra Alta trouxe foi mostrar isso pra quem bebe — com dado, não só com conversa."</h2>
-        </article>
-        <aside class="hidden">
-            <h1>Receba a torra da semana antes de qualquer loja.</h1>
-            <abbr title="Não está funcionando ainda :(">Montar minha assinatura</abbr>
-        </aside>
-        <div id="campCar">
-            <ul id="carrinho">
-                <h1>Seu carrinho será exibido aqui:</h1>
-            </ul>
-        </div>
+        <h1 class="faixaDeIdentificacao">salgados</h1>
     </main>
     <footer>
-        <p> Torra Alta - Torrefação, Extrema</p>
-        <p>Origem, A Torra, Cafés e Assinaturas</p>
+        
     </footer>
 <script src="script.js"></script>
 </body>
