@@ -1,5 +1,9 @@
+let notificacao = document.getElementById('notificacao')
+notificacao.textContent=''
 function adicionarAoCarrinho(){
-    let notificar = document.getElementById('notificacao')
-    setTimeout(function(){ 
-        notificar.textContent='Adicionado ao carrinho com sucesso!' } , 3000 );
+          notificacao.textContent ='Adicionado ao carrinho'
+    setTimeout(function(){
+        notificacao.textContent=''} , 2000
+    );
 }
+let listaDeProduto = []
